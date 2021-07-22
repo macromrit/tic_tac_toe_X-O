@@ -2,4 +2,8 @@
 developed a XO game via python without any use of gui's
 pretty simple and primitive..
 core libraries used -> numpy(for use of arrays)
+
+# prerequisites
+install numpy if ya haven't
+
 # Macromrit
