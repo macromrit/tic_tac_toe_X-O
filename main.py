@@ -1,3 +1,4 @@
+#import numpy and other neccessary prerequisites
 try:
     import numpy as np
     ###############################
@@ -16,23 +17,6 @@ crude_matrix  = np.array(
      ['7', '8', '9']]
 
 )
-
-
-#final output
-final_output = F'''
-
-{crude_matrix[0,0]} | {crude_matrix[0,1]} | {crude_matrix[0,2]}
-
-__  __  __
-
-{crude_matrix[1,0]} | {crude_matrix[1,1]} | {crude_matrix[1,2]}
-
-__  __  __
-
-{crude_matrix[2,0]} | {crude_matrix[2,1]} | {crude_matrix[2,2]}
-
-'''
-
 
 #guidlines to play the game
 instructions =  ['1) This game mandatorily requires 2 users or players for playing it...',

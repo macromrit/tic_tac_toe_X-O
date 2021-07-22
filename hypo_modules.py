@@ -1,4 +1,8 @@
-from numpy import *
+#importing numpy
+try:
+    from numpy import *
+except:
+    print('error-> phase-I')
 
 def first_row(z: array) -> bool:
     if z[0, 0] == z[0,1] == z[0, 2]:
