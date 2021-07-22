@@ -91,62 +91,74 @@ __  __  __
     g = left_diag(crude_matrix)
     h = right_diag(crude_matrix)
 
+    won='no'
 
     if a[0]:
         nappy(0.5)
         print(F'{a[1]} savored victory this time ')
+        won = 'yes'
         break
+
 
     elif b[0]:
         nappy(0.5)
         print(F'{b[1]} savored victory this time ')
+        won = 'yes'
         break
 
     elif c[0]:
         nappy(0.5)
         print(F'{c[1]} savored victory this time ')
+        won = 'yes'
         break
 
     elif d[0]:
         nappy(0.5)
         print(F'{d[1]} savored victory this time ')
+        won = 'yes'
         break
 
     elif e[0]:
         nappy(0.5)
         print(F'{e[1]} savored victory this time ')
+        won = 'yes'
         break
 
     elif f[0]:
         nappy(0.5)
         print(F'{f[1]} savored victory this time ')
+        won = 'yes'
         break
 
     elif g[0]:
         nappy(0.5)
         print(F'{g[1]} savored victory this time ')
+        won = 'yes'
         break
 
     elif h[0]:
         nappy(0.5)
         print(F'{h[1]} savored victory this time ')
+        won = 'yes'
         break
 
-    else:
-        print('match drawn dude!!')
     
+    else:
+        pass
+
+    ######################################################
+
     total_turns+=1
 
+    if total_turns == 9:
+        if won == 'no':
+            print('match has been drawn')
+        else:
+            print('what a contest was that.. Man O Man !!!')
+    
+    else:
+        pass
+
+    print('Thanks for choosing us.. se ya soon')
 
     nappy(0.5)
-
-
-
-
-
-
-
-
-
-
-
