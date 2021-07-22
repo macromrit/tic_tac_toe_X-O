@@ -66,7 +66,10 @@ __  __  __
         try:
             swap_val = (int(input('enter the number you wanna place {0} in: '.format(char))))
             ########
-            break
+            if 0<swap_val<=9:
+                break
+            else:
+                print('hey dumbo!! enter a valid input!')
 
         except:
             print('Ooopss.. invalid input.. give it a shot again!!!')
@@ -130,7 +133,7 @@ __  __  __
         break
 
     else:
-        pass
+        print('match drawn dude!!')
     
     total_turns+=1
 
