@@ -159,6 +159,6 @@ __  __  __
     else:
         pass
 
-    print('Thanks for choosing us.. se ya soon')
+    print('Thanks for choosing us.. see ya soon')
 
     nappy(0.5)
