@@ -24,7 +24,7 @@ instructions =  ['1) This game mandatorily requires 2 users or players for playi
                  '3) It starts with X',
                  "4) Enjoy.. that's all.. yup seriously that's all."]
 
-#rendering out the instructions
+#rendering out the instructions 
 for i in instructions:
     print(i)
     nappy(1)
@@ -32,6 +32,9 @@ for i in instructions:
 
 #turn initialization
 total_turns = 0
+
+#nack_detectors
+manipulative_list = list()
 
 while total_turns<9:
 
@@ -41,7 +44,6 @@ while total_turns<9:
     else:
         char = 'O'
     
-
     
     final_output = F'''
 
@@ -66,10 +68,11 @@ __  __  __
         try:
             swap_val = (int(input('enter the number you wanna place {0} in: '.format(char))))
             ########
-            if 0<swap_val<=9:
+            if (0<swap_val<=9) and (swap_val not in manipulative_list):
+                manipulative_list.append(swap_val)
                 break
             else:
-                print('hey dumbo!! enter a valid input!')
+                print('hey dumbo!! enter a valid input! or might be that the place has been mounted priorly...')
 
         except:
             print('Ooopss.. invalid input.. give it a shot again!!!')
@@ -138,7 +141,7 @@ __  __  __
 
     elif h[0]:
         nappy(0.5)
-        print(F'{h[1]} savored victory this time ')
+        print(F'{h[1]} savored victory this time')
         won = 'yes'
         break
 
@@ -154,11 +157,14 @@ __  __  __
         if won == 'no':
             print('match has been drawn')
         else:
-            print('what a contest was that.. Man O Man !!!')
+            pass
+          
     
     else:
         pass
 
-    print('Thanks for choosing us.. see ya soon')
+
 
     nappy(0.5)
+
+print('Thanks for choosing us.. see ya soon')
